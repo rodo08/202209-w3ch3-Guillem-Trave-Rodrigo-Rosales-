@@ -7,7 +7,8 @@
     "build-js": "tsc",
     "build-js:dev": "npm run build-js -- -w",
     "test": "jest",
-    "test:dev": "npm test -- --watchAll"
+    "test:dev": "npm test -- --watchAll",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -27,6 +28,7 @@
     "eslint-config-prettier": "^8.5.0",
     "eslint-config-xo": "^0.42.0",
     "eslint-config-xo-typescript": "^0.53.0",
-    "typescript": "^4.8.4"
+    "typescript": "^4.8.4",
+    "husky": "^8.0.0"
   }
 }
