@@ -23,19 +23,22 @@ class CardSeries extends Component {
     );
     title.render();
 
+    const isWatched: boolean = this.subSectionTitle.includes("Watched");
     let showTitle: string;
-    const seriesPending = series.filter((serie) => !serie.watched).length;
-    const seriesWatched = series.filter((serie) => serie.watched).length;
+    const seriesWatched = series.filter(
+      (serie) => serie.watched === isWatched
+    ).length;
+
     if (this.subSectionTitle.includes("Watched")) {
       if (seriesWatched === series.length) {
         showTitle = "Congrats! You've watched all your series";
       } else {
         showTitle = `You have ${seriesWatched} series pending to watch`;
       }
-    } else if (seriesPending <= 0) {
+    } else if (seriesWatched <= 0) {
       showTitle = "You have not watched any serie yet";
     } else {
-      showTitle = `You have watched ${seriesPending} series`;
+      showTitle = `You have watched ${seriesWatched} series`;
     }
 
     const paragraph = new Paragraph(this.domElement, "info", showTitle);
