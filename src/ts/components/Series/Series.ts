@@ -1,6 +1,6 @@
-import Component from "../../Component/Component.js";
-import Title from "../../Title/Title.js";
-import CardSeries from "./CardSeries/CardSeries.js";
+import CardSeries from "../CardSeries/CardSeries.js";
+import Component from "../Component/Component.js";
+import Title from "../Title/Title.js";
 
 class Series extends Component {
   constructor(parentElemnt: HTMLElement, className: string) {
