@@ -1,7 +1,7 @@
-import series from "../../../../series.js";
-import Component from "../../../Component/Component.js";
-import Paragraph from "../../../Paragraph/Paragraph.js";
-import Title from "../../../Title/Title.js";
+import series from "../../series.js";
+import Component from "../Component/Component.js";
+import Paragraph from "../Paragraph/Paragraph.js";
+import Title from "../Title/Title.js";
 
 class CardSeries extends Component {
   constructor(
