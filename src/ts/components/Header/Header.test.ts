@@ -1,7 +1,7 @@
 import Header from "./Header.js";
 
 describe("Given the instance Header", () => {
-  describe("When it an title", () => {
+  describe("When it has a container component with the title 'My Series' on it", () => {
     test("Then the viewport should show a header tag component on it", () => {
       const container = document.createElement("div");
       const header = new Header(container, "");
