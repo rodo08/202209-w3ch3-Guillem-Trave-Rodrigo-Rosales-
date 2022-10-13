@@ -1,6 +1,6 @@
 import Component from "../../Component.js";
 import Title from "../../Title/Title.js";
-import MainSeriesPending from "./MainSeriesPending/MainSeriesPending.js";
+import CardSeries from "./CardSeries/CardSeries.js";
 
 class MainSeries extends Component {
   constructor(parentElemnt: HTMLElement, className: string) {
@@ -17,11 +17,18 @@ class MainSeries extends Component {
       "Series list"
     );
     title.render();
-    const mainSeriesPending = new MainSeriesPending(
+    const cardSeries = new CardSeries(
       this.domElement,
-      "series-pending"
+      "series-pending",
+      "Pending series"
     );
-    mainSeriesPending.render();
+    cardSeries.render();
+    const cardSeries2 = new CardSeries(
+      this.domElement,
+      "series-watched",
+      "Watched series"
+    );
+    cardSeries2.render();
   }
 }
 
