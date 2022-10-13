@@ -1,5 +1,5 @@
 import series from "../../../../series.js";
-import Component from "../../../Component.js";
+import Component from "../../../Component/Component.js";
 import Paragraph from "../../../Paragraph/Paragraph.js";
 import Title from "../../../Title/Title.js";
 
@@ -38,7 +38,7 @@ class CardSeries extends Component {
       showTitle = `You have watched ${seriesPending} series`;
     }
 
-    const paragraph = new Paragraph(this.domElement, "p", "info", showTitle);
+    const paragraph = new Paragraph(this.domElement, "info", showTitle);
     paragraph.render();
   }
 }

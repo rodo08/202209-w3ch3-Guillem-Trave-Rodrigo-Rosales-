@@ -1,4 +1,4 @@
-import Component from "../Component.js";
+import Component from "../Component/Component.js";
 
 class Paragraph extends Component {
   constructor(
@@ -10,8 +10,9 @@ class Paragraph extends Component {
   }
 
   render(): void {
-    this.domElement.textContent = this.title;
     super.render();
+
+    this.domElement.textContent = this.title;
   }
 }
 
