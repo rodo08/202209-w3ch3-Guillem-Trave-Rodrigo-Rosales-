@@ -1,9 +1,10 @@
-import Component from "../Component.js";
+import type { TitleTag } from "../../types.js";
+import Component from "../Component/Component.js";
 
 class Title extends Component {
   constructor(
     parentElement: HTMLElement,
-    tag: string,
+    tag: TitleTag,
     className: string,
     private readonly title: string
   ) {
@@ -11,8 +12,9 @@ class Title extends Component {
   }
 
   render(): void {
-    this.domElement.textContent = this.title;
     super.render();
+
+    this.domElement.textContent = this.title;
   }
 }
 

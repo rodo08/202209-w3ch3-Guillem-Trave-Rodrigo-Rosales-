@@ -1,4 +1,4 @@
-import Component from "../Component.js";
+import Component from "../Component/Component.js";
 import Title from "../Title/Title.js";
 
 class Header extends Component {
