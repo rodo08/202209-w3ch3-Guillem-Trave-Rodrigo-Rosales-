@@ -17,18 +17,18 @@ class Series extends Component {
       "Series list"
     );
     title.render();
-    const cardSeries = new CardSeries(
+    const cardSeriesPending = new CardSeries(
       this.domElement,
       "series-pending",
       "Pending series"
     );
-    cardSeries.render();
-    const cardSeries2 = new CardSeries(
+    cardSeriesPending.render();
+    const cardSeriesWatched = new CardSeries(
       this.domElement,
       "series-watched",
       "Watched series"
     );
-    cardSeries2.render();
+    cardSeriesWatched.render();
   }
 }
 

@@ -35,10 +35,14 @@ class CardSeries extends Component {
       } else {
         showTitle = `You have ${seriesWatched} series pending to watch`;
       }
-    } else if (seriesWatched <= 0) {
-      showTitle = "You have not watched any serie yet";
-    } else {
-      showTitle = `You have watched ${seriesWatched} series`;
+    }
+
+    if (this.subSectionTitle.includes("Pending")) {
+      if (seriesWatched <= 0) {
+        showTitle = "You have not watched any serie yet";
+      } else {
+        showTitle = `You have watched ${seriesWatched} series`;
+      }
     }
 
     const paragraph = new Paragraph(this.domElement, "info", showTitle);
