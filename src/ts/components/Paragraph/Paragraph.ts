@@ -3,11 +3,10 @@ import Component from "../Component.js";
 class Paragraph extends Component {
   constructor(
     parentElement: HTMLElement,
-    tag: string,
     className: string,
     private readonly title: string
   ) {
-    super(parentElement, tag, className);
+    super(parentElement, "p", className);
   }
 
   render(): void {
