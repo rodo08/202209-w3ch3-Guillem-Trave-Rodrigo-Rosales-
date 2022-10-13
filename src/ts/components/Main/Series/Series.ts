@@ -2,7 +2,7 @@ import Component from "../../Component/Component.js";
 import Title from "../../Title/Title.js";
 import CardSeries from "./CardSeries/CardSeries.js";
 
-class MainSeries extends Component {
+class Series extends Component {
   constructor(parentElemnt: HTMLElement, className: string) {
     super(parentElemnt, "section", className);
   }
@@ -32,4 +32,4 @@ class MainSeries extends Component {
   }
 }
 
-export default MainSeries;
+export default Series;

@@ -1,5 +1,5 @@
 import Component from "../Component/Component.js";
-import MainSeries from "./MainSeries/MainSeries.js";
+import Series from "./Series/Series.js";
 
 class Main extends Component {
   constructor(parentElemnt: HTMLElement, className: string) {
@@ -9,8 +9,8 @@ class Main extends Component {
   render(): void {
     super.render();
 
-    const mainSeries = new MainSeries(this.domElement, "series");
-    mainSeries.render();
+    const series = new Series(this.domElement, "series");
+    series.render();
   }
 }
 
