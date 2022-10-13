@@ -10,8 +10,9 @@ class Paragraph extends Component {
   }
 
   render(): void {
-    this.domElement.textContent = this.title;
     super.render();
+
+    this.domElement.textContent = this.title;
   }
 }
 
