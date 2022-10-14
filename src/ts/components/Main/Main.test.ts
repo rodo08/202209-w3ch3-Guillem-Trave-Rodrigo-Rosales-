@@ -5,11 +5,11 @@ describe("Given the instance Main", () => {
     test("Then it should render a main container which inside contains a section container", () => {
       const screen = document.createElement("div");
 
-      const main = new Main(screen, "");
+      const main = new Main(screen, "main");
       main.render();
 
-      const queryMain = screen.querySelector("main");
-      const querySection = screen.querySelector("section");
+      const queryMain = screen.querySelector(".main");
+      const querySection = screen.querySelector(".series");
 
       expect(queryMain).not.toBeNull();
       expect(querySection).not.toBeNull();
